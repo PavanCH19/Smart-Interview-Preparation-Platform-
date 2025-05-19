@@ -1,0 +1,53 @@
+.nav-links .nav-item-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    font-size: 1rem;
+}
+
+.nav-links .nav-item-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links .nav-item-link:hover {
+    color: #007bff;
+}
+
+.nav-links .nav-item-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header logo styling */
+.logo {
+    height: 45px;
+    /* Clean size for header */
+    width: auto;
+    margin-right: 16px;
+    /* Space between logo and brand name */
+    object-fit: contain;
+    border-radius: 8px;
+    /* Soft rounded corners */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    /* Smooth zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    /* Blue glow */
+}
