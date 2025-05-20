@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/pages/LandingPage';
 import Login from './components/auth/Login';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <>
