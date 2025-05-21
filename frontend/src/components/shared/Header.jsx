@@ -22,6 +22,7 @@ function Header() {
                         <Link className="nav-item-link" to="/testimonials">Testimonials</Link>
                         <Link className="nav-item-link" to="/faqs">FAQs</Link>
                         <Link className="nav-item-link" to="/contact">Contact</Link>
+                        <Link className="nav-item-link" to="/dashboard">Dashboard</Link>
                     </div>
 
                     <div className="d-flex gap-2">
