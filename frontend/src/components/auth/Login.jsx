@@ -7,6 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 import Header from "../shared/header";
 import { validateForm } from "../utils/formValidation";
 import { loginUser, registerUser } from "../../Redux-toolkit/authSlice";
+import GoogleLogin from "../../firebase/GoogleLogin";
+
 
 function Login() {
     const [isRegister, setIsRegister] = useState(false);
@@ -135,6 +137,8 @@ function Login() {
         }
     };
 
+
+
     return (
         <>
             <ToastContainer position="top-center" />
@@ -254,9 +258,7 @@ function Login() {
                                         <a href="#" className="btn btn-outline-info rounded-circle px-3 py-2">
                                             <i className="bi bi-twitter"></i>
                                         </a>
-                                        <a href="#" className="btn btn-outline-danger rounded-circle px-3 py-2">
-                                            <i className="bi bi-google"></i>
-                                        </a>
+                                        <GoogleLogin />
                                     </div>
 
                                     {/* Switch Login/Register */}
